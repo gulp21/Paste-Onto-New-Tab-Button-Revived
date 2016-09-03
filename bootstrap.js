@@ -178,7 +178,9 @@ function onClick(event) {
 
     // The original middleMousePaste told openUILink to ignore the button
     // used. We do not, so this should open a new tab for us.
-    window.openUILinkIn(url, "tab");
+    // Opens the given url string in a new tab, allow third party fixup
+    // (ie. allow making a search if url is no URL).
+    window.openUILinkIn(url, "tab", true);
 
     event.stopPropagation();
 }
