@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <!-- type 2 is extension. -->
-  <rdf:Description rdf:about="urn:mozilla:install-manifest" em:id="opennewtabbuttonpaste@mzz.mine.nu" em:version="0.3.1-signed.1-signed" em:type="2" em:name="Paste Onto New Tab Button" em:description="Allow pasting links into the New Tab toolbar button." em:creator="Marien Zwart" em:bootstrap="true">
+  <rdf:Description rdf:about="urn:mozilla:install-manifest" em:id="pasteontonewtabbuttonrevived@gulp21.addons.mozilla.org" em:version="0.4" em:type="2" em:name="Paste Onto New Tab Button" em:description="Allow pasting links into the New Tab toolbar button." em:creator="Markus Brenneis" em:developer="Marien Zwart" em:bootstrap="true">
     <!-- Firefox: -->
     <em:targetApplication>
-      <rdf:Description em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}" em:minVersion="9.0" em:maxVersion="9.*"/>
+      <rdf:Description em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}" em:minVersion="45.0" em:maxVersion="51.*"/>
     </em:targetApplication>
   </rdf:Description>
 </rdf:RDF>
