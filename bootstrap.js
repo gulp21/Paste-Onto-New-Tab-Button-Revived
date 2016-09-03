@@ -160,9 +160,11 @@ function onClick(event) {
     if (!url)
         return;
 
-    url = window.getShortcutOrURI(url, {});
-    if (!url)
-        return;
+    try {
+        window.makeURI(url);
+    } catch (ex) {
+        Cu.reportError(ex);
+    }
 
     try {
         window.addToUrlbarHistory(url);
@@ -176,7 +178,7 @@ function onClick(event) {
 
     // The original middleMousePaste told openUILink to ignore the button
     // used. We do not, so this should open a new tab for us.
-    window.openUILink(url, event);
+    window.openUILinkIn(url, "tab");
 
     event.stopPropagation();
 }
